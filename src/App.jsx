@@ -262,58 +262,18 @@ function Hero() {
 
             </div>
 
-            {/* TECHNOLOGY BADGES */}
-            <div className="mt-6">
 
-              <p className="mb-4 text-xs font-semibold uppercase tracking-[.2em] text-slate-500">
-                Technologies I work with
-              </p>
-
-              <div className="flex flex-wrap gap-2">
-
-                {[
-                  "React",
-                  "Next.js",
-                  "JavaScript",
-                  "Node.js",
-                  "Express.js",
-                  "MongoDB"
-                ].map((tech) => (
-                  <span
-                    key={tech}
-                    className="rounded-lg border border-lime-300/20 bg-lime-300/5 px-3 py-2 text-xs text-lime-200 transition hover:bg-lime-300/15"
-                  >
-                    {tech}
-                  </span>
-                ))}
-
-              </div>
-            </div>
-
-            {/* CARD FOOTER */}
-            <div className="mt-7 flex items-center gap-2 border-t border-white/10 pt-5 text-xs text-lime-300">
 
               <span className="h-2 w-2 animate-pulse rounded-full bg-lime-300" />
 
-              Always learning. Always building.
+            
 
-            </div>
+          
 
           </div>
 
           {/* FLOATING FOCUS BADGE */}
-          <div className="absolute -bottom-5 -left-5 rounded-2xl border border-white/10 bg-[#111923] px-5 py-4 shadow-2xl">
-
-            <p className="text-xs text-slate-500">
-              CURRENT FOCUS
-            </p>
-
-            <p className="mt-1 font-semibold text-white">
-              React & Full Stack
-            </p>
-
-          </div>
-
+      
         </div>
 
       </div>
