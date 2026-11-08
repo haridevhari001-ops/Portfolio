@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #e8edf7;
+  background: #080b12;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+h1,h2,h3,.display { font-family: "Space Grotesk", sans-serif; }
+::selection { background: #a3e635; color: #10150b; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; }
+.grid-bg {
+  background-image: linear-gradient(rgba(148,163,184,.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148,163,184,.055) 1px, transparent 1px);
+  background-size: 46px 46px;
+  mask-image: linear-gradient(to bottom, black, transparent 92%);
+}
+.glow { box-shadow: 0 0 90px rgba(163,230,53,.12); }
+.card-shine { position: relative; overflow: hidden; }
+.card-shine::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(120deg, transparent 20%, rgba(255,255,255,.035), transparent 65%);
+}
+.section-anchor { scroll-margin-top: 100px; }
