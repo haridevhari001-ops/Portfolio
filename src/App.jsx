@@ -106,59 +106,231 @@ function SectionHeading({ eyebrow, title, description }) {
 }
 
 function Hero() {
-  return <section id="home" className="section-anchor relative flex min-h-[760px] items-center overflow-hidden px-5 pb-20 pt-32 md:px-8">
-    <div className="grid-bg absolute inset-0" />
-    <div className="absolute -right-40 top-24 h-[500px] w-[500px] rounded-full bg-lime-300/[0.07] blur-[110px]" />
-    <div className="relative mx-auto grid w-full max-w-7xl items-center gap-14 lg:grid-cols-[1.2fr_.8fr]">
-      <div>
-        <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-lime-300/20 bg-lime-300/[0.06] px-4 py-2 text-xs font-medium text-lime-200">
-          <span className="h-2 w-2 animate-pulse rounded-full bg-lime-300" /> Available for opportunities
-        </div>
-        <p className="mb-4 text-sm font-medium tracking-wide text-slate-400">HELLO, I'M</p>
-        <h1 className="display text-5xl font-bold leading-[1.08] tracking-[-.05em] text-white sm:text-7xl">
-          Haridev<span className="text-lime-300"> C.</span>
-        </h1>
-        <h2 className="display mt-5 text-2xl font-medium text-slate-300 sm:text-3xl">I build for the <span className="text-lime-300">web.</span></h2>
-        <p className="mt-6 max-w-xl text-base leading-8 text-slate-400">
-          FullStack developer focused on building responsive, accessible, and user-friendly web experiences. Currently growing my skills across React and full-stack development.
-        </p>
-        <div className="mt-9 flex flex-wrap gap-3">
-          <a href="#projects" className="inline-flex items-center gap-2 rounded-full bg-lime-300 px-6 py-3 font-bold text-slate-950 transition hover:-translate-y-1 hover:bg-lime-200">Explore my work <ArrowUpRight size={17} /></a>
-          <a href={profile.resume} className="inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 font-semibold text-white transition hover:border-lime-300/50 hover:text-lime-200"><Download size={16} /> Resume</a>
-        </div>
-        <div className="mt-12 flex items-center gap-5 text-slate-400">
-          <a aria-label="GitHub" href={profile.github} target="_blank" rel="noreferrer" className="transition hover:text-lime-300"><Github size={20} /></a>
-          <a aria-label="LinkedIn" href={profile.linkedin} target="_blank" rel="noreferrer" className="transition hover:text-lime-300"><Linkedin size={20} /></a>
-          <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`} target="_blank" rel="noreferrer">
-  <Mail size={20} />
-</a>          <span className="h-px w-12 bg-white/15" />
-          <span className="flex items-center gap-2 text-xs"><MapPin size={14} /> {profile.location}</span>
-        </div>
-      </div>
-      <div className="relative mx-auto w-full max-w-[390px]">
-        <div className="glow absolute inset-8 rounded-full bg-lime-300/10 blur-3xl" />
-        <div className="card-shine relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-[#1c2930] via-[#111923] to-[#11131c] p-7">
-          <div className="absolute right-7 top-7 text-xs tracking-[.2em] text-slate-500">PORTFOLIO / 2026</div>
-          <div className="absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-t from-lime-300/[0.08] to-transparent" />
-          <div className="relative flex h-full flex-col justify-between">
-            <div className="mt-12 flex aspect-square items-center justify-center rounded-full border border-lime-300/20 bg-lime-300/[0.06]">
-              <div className="display text-8xl font-bold tracking-[-.1em] text-lime-200">HC<span className="text-white/30">.</span></div>
-            </div>
-            <div>
-              <p className="text-xs uppercase tracking-[.25em] text-lime-300">Developer · Creator</p>
-              <p className="display mt-2 text-3xl font-semibold text-white">Turning ideas<br />into interfaces.</p>
-            </div>
+  return (
+    <section
+      id="home"
+      className="section-anchor relative flex min-h-[760px] items-center overflow-hidden px-5 pb-20 pt-32 md:px-8"
+    >
+      {/* BACKGROUND */}
+      <div className="grid-bg absolute inset-0" />
+
+      <div className="absolute -right-40 top-24 h-[500px] w-[500px] rounded-full bg-lime-300/[0.07] blur-[110px]" />
+
+      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-16 lg:grid-cols-[1.2fr_.8fr]">
+
+        {/* LEFT SIDE */}
+        <div>
+
+          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-lime-300/20 bg-lime-300/[0.06] px-4 py-2 text-xs font-medium text-lime-200">
+            <span className="h-2 w-2 animate-pulse rounded-full bg-lime-300" />
+            Available for opportunities
           </div>
-          <div className="absolute bottom-7 right-7 rounded-full border border-white/10 bg-black/20 p-3 text-lime-300"><Code2 size={22} /></div>
+
+          <p className="mb-4 text-sm font-medium tracking-wide text-slate-400">
+            HELLO, I'M
+          </p>
+
+          <h1 className="display text-5xl font-bold leading-[1.08] tracking-[-.05em] text-white sm:text-7xl">
+            Haridev<span className="text-lime-300"> C.</span>
+          </h1>
+
+          <h2 className="display mt-5 text-2xl font-medium text-slate-300 sm:text-3xl">
+            I build for the <span className="text-lime-300">web.</span>
+          </h2>
+
+          <p className="mt-6 max-w-xl text-base leading-8 text-slate-400">
+            Full Stack Developer focused on building responsive,
+            accessible, and user-friendly web experiences.
+            Currently expanding my skills with React, Next.js,
+            Node.js, Express.js, and MongoDB.
+          </p>
+
+          {/* BUTTONS */}
+          <div className="mt-9 flex flex-wrap gap-3">
+
+            <a
+              href="#projects"
+              className="inline-flex items-center gap-2 rounded-full bg-lime-300 px-6 py-3 font-bold text-slate-950 transition hover:-translate-y-1 hover:bg-lime-200"
+            >
+              Explore my work
+              <ArrowUpRight size={17} />
+            </a>
+
+            <a
+              href={profile.resume}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 font-semibold text-white transition hover:border-lime-300/50 hover:text-lime-200"
+            >
+              <Download size={16} />
+              Resume
+            </a>
+
+          </div>
+
+          {/* SOCIAL LINKS */}
+          <div className="mt-12 flex flex-wrap items-center gap-5 text-slate-400">
+
+            <a
+              aria-label="GitHub"
+              href={profile.github}
+              target="_blank"
+              rel="noreferrer"
+              className="transition hover:text-lime-300"
+            >
+              <Github size={20} />
+            </a>
+
+            <a
+              aria-label="LinkedIn"
+              href={profile.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              className="transition hover:text-lime-300"
+            >
+              <Linkedin size={20} />
+            </a>
+
+            <a
+              aria-label="Email"
+              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`}
+              target="_blank"
+              rel="noreferrer"
+              className="transition hover:text-lime-300"
+            >
+              <Mail size={20} />
+            </a>
+
+            <span className="h-px w-12 bg-white/15" />
+
+            <span className="flex items-center gap-2 text-xs">
+              <MapPin size={14} />
+              {profile.location}
+            </span>
+
+          </div>
         </div>
-        <div className="absolute -bottom-5 -left-7 rounded-2xl border border-white/10 bg-[#111923] px-5 py-4 shadow-2xl">
-          <p className="text-xs text-slate-500">FOCUS</p><p className="mt-1 font-semibold text-white">Frontend & Full Stack</p>
+
+        {/* RIGHT SIDE - PROFILE PHOTO CARD */}
+        <div className="relative mx-auto w-full max-w-[390px]">
+
+          {/* BACKGROUND GLOW */}
+          <div className="absolute inset-8 rounded-full bg-lime-300/10 blur-3xl" />
+
+          {/* MAIN CARD */}
+          <div className="card-shine relative overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-[#1c2930] via-[#111923] to-[#11131c] p-6 shadow-2xl">
+
+            {/* CARD HEADER */}
+            <div className="mb-5 flex items-center justify-between">
+
+              <span className="text-xs tracking-[.2em] text-slate-500">
+                PORTFOLIO / 2026
+              </span>
+
+              <Code2 size={20} className="text-lime-300" />
+
+            </div>
+
+            {/* PROFILE PHOTO */}
+            <div className="group relative overflow-hidden rounded-2xl border border-lime-300/20">
+
+              <img
+                src="/hero-img.png"
+                alt="Haridev - Full Stack Developer"
+                className="h-[350px] w-full object-cover object-center transition duration-700 group-hover:scale-105"
+              />
+
+              {/* IMAGE OVERLAY */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1018] via-transparent to-transparent" />
+
+              {/* PHOTO DETAILS */}
+              <div className="absolute bottom-5 left-5">
+
+                <p className="text-xs uppercase tracking-[.25em] text-lime-300">
+                  Developer · Creator
+                </p>
+
+                <h3 className="display mt-2 text-3xl font-semibold text-white">
+                  Haridev C.
+                </h3>
+
+                <p className="mt-1 text-sm text-slate-300">
+                  Full Stack Developer
+                </p>
+
+              </div>
+
+            </div>
+
+            {/* TECHNOLOGY BADGES */}
+            <div className="mt-6">
+
+              <p className="mb-4 text-xs font-semibold uppercase tracking-[.2em] text-slate-500">
+                Technologies I work with
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+
+                {[
+                  "React",
+                  "Next.js",
+                  "JavaScript",
+                  "Node.js",
+                  "Express.js",
+                  "MongoDB"
+                ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="rounded-lg border border-lime-300/20 bg-lime-300/5 px-3 py-2 text-xs text-lime-200 transition hover:bg-lime-300/15"
+                  >
+                    {tech}
+                  </span>
+                ))}
+
+              </div>
+            </div>
+
+            {/* CARD FOOTER */}
+            <div className="mt-7 flex items-center gap-2 border-t border-white/10 pt-5 text-xs text-lime-300">
+
+              <span className="h-2 w-2 animate-pulse rounded-full bg-lime-300" />
+
+              Always learning. Always building.
+
+            </div>
+
+          </div>
+
+          {/* FLOATING FOCUS BADGE */}
+          <div className="absolute -bottom-5 -left-5 rounded-2xl border border-white/10 bg-[#111923] px-5 py-4 shadow-2xl">
+
+            <p className="text-xs text-slate-500">
+              CURRENT FOCUS
+            </p>
+
+            <p className="mt-1 font-semibold text-white">
+              React & Full Stack
+            </p>
+
+          </div>
+
         </div>
+
       </div>
-    </div>
-    <a href="#about" aria-label="Scroll to about" className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 text-slate-500 transition hover:text-lime-300 md:block"><ArrowDown size={20} /></a>
-  </section>;
+
+      {/* SCROLL INDICATOR */}
+      <a
+        href="#about"
+        aria-label="Scroll to about"
+        className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 text-slate-500 transition hover:text-lime-300 md:block"
+      >
+        <ArrowDown size={20} />
+      </a>
+
+    </section>
+  );
 }
+
 
 function About() {
   return <section id="about" className="section-anchor border-t border-white/[0.06] px-5 py-28 md:px-8">
