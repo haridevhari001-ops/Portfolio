@@ -7,7 +7,7 @@ import {
 
 const profile = {
   name: "Haridev C",
-  role: "FullStack Developer",
+  role: "Full Stack Developer",
   location: "Calicut, Kerala, India",
   email: "haridevhari001@gmail.com",
   github: "https://github.com/haridevhari001-ops",
@@ -26,7 +26,7 @@ const projects = [
     accent: "from-lime-300/20 via-emerald-400/5 to-transparent",
     mark: "EC",
     github: "https://github.com/haridevhari001-ops/Redux-cart",
-    demo: "https://redux-cart-p0iss3lnc-haridev.vercel.app/",   
+    demo: "https://redux-cart-p0iss3lnc-haridev.vercel.app/",
   },
   {
     number: "02",
@@ -129,8 +129,9 @@ function Hero() {
         <div className="mt-12 flex items-center gap-5 text-slate-400">
           <a aria-label="GitHub" href={profile.github} target="_blank" rel="noreferrer" className="transition hover:text-lime-300"><Github size={20} /></a>
           <a aria-label="LinkedIn" href={profile.linkedin} target="_blank" rel="noreferrer" className="transition hover:text-lime-300"><Linkedin size={20} /></a>
-          <a aria-label="Email" href={`mailto:${profile.email}`} className="transition hover:text-lime-300"><Mail size={20} /></a>
-          <span className="h-px w-12 bg-white/15" />
+          <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`} target="_blank" rel="noreferrer">
+  <Mail size={20} />
+</a>          <span className="h-px w-12 bg-white/15" />
           <span className="flex items-center gap-2 text-xs"><MapPin size={14} /> {profile.location}</span>
         </div>
       </div>
