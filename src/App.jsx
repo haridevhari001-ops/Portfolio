@@ -12,7 +12,7 @@ const profile = {
   email: "haridevhari001@gmail.com",
   github: "https://github.com/haridevhari001-ops",
   linkedin: "https://www.linkedin.com/in/haridevc/",
-  resume: "/Haridev_Resume_One_Page (1) (1).pdf",
+  resume: "/public/Haridev.C.pdf",
 };
 
 const projects = [
@@ -28,30 +28,30 @@ const projects = [
     github: "https://github.com/haridevhari001-ops/Redux-cart",
     demo: "https://redux-cart-p0iss3lnc-haridev.vercel.app/",
   },
-  {
-    number: "02",
-    name: "Calculator Web App",
-    type: "Frontend · Utility",
-    description:
-      "A responsive calculator with a clean interface for performing basic arithmetic operations, built to practise JavaScript logic and interactive UI development.",
-    stack: ["HTML", "CSS", "Bootstrap", "JavaScript"],
-    accent: "from-sky-300/20 via-blue-400/5 to-transparent",
-    mark: "＋",
-    github: "#", // Add repository URL
-    demo: "#",   // Add live URL
-  },
-  {
-    number: "03",
-    name: "Airbnb Clone Web App",
-    type: "Frontend · UI recreation",
-    description:
-      "An Airbnb-inspired responsive webpage focused on recreating a familiar travel interface with structured layouts and a user-friendly visual experience.",
-    stack: ["HTML", "CSS", "Bootstrap"],
-    accent: "from-rose-300/20 via-pink-400/5 to-transparent",
-    mark: "A",
-    github: "#", // Add repository URL
-    demo: "#",   // Add live URL
-  },
+ {
+  number: "02",
+  name: "Resume Builder",
+  type: "Frontend · Utility",
+  description:
+    "A responsive resume builder that allows users to create and customize professional resumes by entering personal details, education, skills, and work experience, with an option to generate and download resumes.",
+  stack: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+  accent: "from-sky-300/20 via-blue-400/5 to-transparent",
+  mark: "📄",
+  github: "https://github.com/haridevhari001-ops/rBuilder-fe", // Add repository URL
+  demo: "https://r-builder-fe.vercel.app/",   // Add live URL
+},
+ {
+  number: "03",
+  name: "E-nvision",
+  type: "Frontend · UI Recreation",
+  description:
+    "An Airbnb-inspired responsive web application that recreates a travel booking interface, featuring clean layouts, intuitive navigation, and visually appealing UI components.",
+  stack: ["HTML", "CSS", "Bootstrap"],
+  accent: "from-rose-300/20 via-pink-400/5 to-transparent",
+  mark: "A",
+  github: "https://github.com/haridevhari001-ops/ENvision", // Add repository URL
+  demo: "https://e-nvision.vercel.app/",   // Add live URL
+},
   {
     number: "04",
     name: "Netflix Clone Web App",
