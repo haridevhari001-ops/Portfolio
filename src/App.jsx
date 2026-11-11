@@ -12,7 +12,7 @@ const profile = {
   email: "haridevhari001@gmail.com",
   github: "https://github.com/haridevhari001-ops",
   linkedin: "https://www.linkedin.com/in/haridevc/",
-  resume: "/public/Haridev.C.pdf",
+  resume: "/Haridev.C.pdf",
 };
 
 const projects = [
@@ -158,7 +158,7 @@ function Hero() {
 
             <a
               href={profile.resume}
-              target="_blank"
+              target=""
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 font-semibold text-white transition hover:border-lime-300/50 hover:text-lime-200"
             >
